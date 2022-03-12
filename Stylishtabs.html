@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Geekcast - Your favourite podcasts are here</title>
+      <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+  <nav>
+      <ul>
+          <li class="brand"><img src="background2.jpg" alt="GeekCast">GeekCast</li>
+          <li>Hello</li>
+          <li>About</li>
+          <li>                                                                                       </li>           
+          <li>
+              <head>
+                  <title>
+                      Search bar
+                  </title>
+                  <link rel="stylesheet" href="stylesearch.css">
+              <script type="text/javascript">
+                  function active(){
+                      var searchBar = document.getElementById('searchBar');
+                      if(searchBar.value=='Search...'){
+                          searchBar.value = ''
+                          searchBar.placeholder = 'Search...'
+                      }
+                  }
+                  function inactive(){
+                      var searchBar = document.getElementById('searchBar');
+          
+                      if(searchBar.value==''){
+                          searchBar.value = 'Search...'
+                          searchBar.placeholder = ''
+                      }
+                  }
+              </script>        
+              <style type="text/css">
+                  #searchBar {
+              border: 1px solid #000000;
+              border-right: none;
+              font-size: 16px;
+              padding: 10px;
+              outline: none;
+              width: 250px;
+              -webkit-border-top-left-radius:10px;
+              -webkit-border-bottom-left-radius:10px;
+              -moz-border-radius-topleft: 10px;
+              -moz-border-radius-bottomleft: 10px;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+          
+          }
+          #searchBtn{
+              border: 1px solid #000000;
+              font-size: 16px;
+              padding: 10px;
+              background: #f1d829;
+              cursor:pointer;
+              outline: none;}
+          #searchButton:hover{
+          background: #32CD32;
+              
+          }
+              </style>
+              </head>
+              
+                  <form action ="search.php" method="post">
+                      <input type="text" id ="searchBar" placeholder="" value="Search..." maxlength="="25 autocomplete="on" onmousedown="active();" onblur="inactive();"/><input type="submit" id="searchBtn" value="Go!"/>
+                  </form>
+              </body></li>
+
+          
+      </ul>
+  </nav>
+            
+        <body>         
+          <div class="container" id="About">
+              <div class="songList">
+                  <h1>PODCASTS</h1>
+                  <div class="songItemContainer">
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="perspective">
+
+                        <label class="tab" for="tab-one">Tab 1</label>
+                        <label class="tab" for="tab-two">Tab 2</label>
+                        <label class="tab" for="tab-three">Tab 3</label>
+                        <input type="radio" name="tabs" id="tab-one">
+                        <input type="radio" name="tabs" id="tab-two">
+                        <input type="radio" name="tabs" id="tab-three"> 
+                      
+                        <div class="cube">
+                          <div class="tab-content">
+                            <a href="HTML3.html"><h1>Entrepreneurship</h1></a>
+                          </div>
+                           <div class="tab-content">
+                           <a href="history.html"><h1>History & Religion</h1></a> 
+                            
+                          </div>
+                          <div class="tab-content">
+                            <a href="psychology.html"><h1>Philosophy & Psychology</h1></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <style>
+                          .perspective {
+              -webkit-perspective: 76em;
+              perspective: 76em;
+              -webkit-perspective-origin: 50% 50px;
+              perspective-origin: 50% 50px;
+              width: 494px;
+              margin: 0 auto;
+              color: #fff;
+              text-align: center;
+            }
+            
+            input { display: none; }
+            
+            .tab {
+              position: absolute;
+              width: 80px;
+              height: 70px;
+              background: pink;
+              right: 0;
+              line-height: 70px;
+              font-weight: 300;
+            }
+            
+            .tab:nth-child(1) {
+              top: -5px;
+              background: #06D6A0;
+            }
+            
+            .tab:nth-child(2) {
+              top: 69px;
+              background: #1B9AAA;
+            }
+            
+            .tab:nth-child(3) {
+              top: 143px;
+              background: #EF476F;
+            }
+            
+            .cube {
+              position: relative;
+              margin: 60px auto 0;
+              width: 300px;
+              height: 200px;
+              -webkit-transform-origin: 0 100px;
+              -ms-transform-origin: 0 100px;
+              transform-origin: 0 100px;
+              -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+              -webkit-transition: -webkit-transform 0.5s ease-in;
+              transition: transform 0.5s ease-in;
+            }
+            
+            .tab-content {
+              width: 300px;
+              height: 200px;
+              position: absolute;
+            }
+            
+            .tab-content h1 {
+              font-size: 25px;
+              margin: 75px 0 10px;
+              font-weight: 300;
+            }
+            
+            .tab-content p { font-size: 12px; }
+            
+            .tab-content:nth-child(2) {
+              -webkit-transform: translateZ(100px);
+              transform: translateZ(100px);
+              background: #1B9AAA;
+            }
+            
+            .tab-content:nth-child(1) {
+              -webkit-transform: rotateX(-270deg) translateY(-100px);
+              transform: rotateX(-270deg) translateY(-100px);
+              -webkit-transform-origin: top left;
+              -ms-transform-origin: top left;
+              transform-origin: top left;
+              background: #06D6A0;
+            }
+            
+            .tab-content:nth-child(3) {
+              -webkit-transform: rotateX(-90deg) translateY(100px);
+              transform: rotateX(-90deg) translateY(100px);
+              -webkit-transform-origin: bottom center;
+              -ms-transform-origin: bottom center;
+              transform-origin: bottom center;
+              background: #EF476F;
+            }
+            #tab-one:checked ~ .cube {
+              -webkit-transform: rotateX(-90deg);
+              transform: rotateX(-90deg);
+            }
+            
+            #tab-two:checked ~ .cube {
+              -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+            }
+            
+            #tab-three:checked ~ .cube {
+              -webkit-transform: rotateX(90deg);
+              transform: rotateX(90deg);
+            }
+            
+                        </style>
+                      
+                  </div>
+              </div>
+              <div class="songBanner"></div>
+          </div>
+      
+          <div class="bottom">
+              <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+              <div class="icons">
+                  <!-- fontawesome icons -->
+                  <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                  <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                  <i class="fas fa-3x fa-step-forward" id="next"></i> 
+              </div>
+              <div class="songInfo">
+                  <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Ranveer Show: Amogh</span>
+              </div>
+          </div>
+          <script src="script.js"></script>
+          <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+      </body>
+</html>
